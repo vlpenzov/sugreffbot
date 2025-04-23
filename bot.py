@@ -11,9 +11,9 @@ from telegram.ext import (
 )
 
 # ===== CONFIG =====
-TOKEN = "YOUR_BOT_TOKEN"  # Замените на токен от BotFather
+TOKEN = "7738250304:AAFFsDvI5dy_pbwHDPYdnd2Nk73gRNv6EMs"  # Замените на токен от BotFather
 CHANNEL_NAME = "@Sugrefftea"  # Ваш канал
-ADMIN_ID = 123456789  # Ваш ID для админ-уведомлений
+ADMIN_ID = 7971829199  # Ваш ID для админ-уведомлений
 # ===================
 
 # Настройка логгирования
