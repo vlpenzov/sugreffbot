@@ -35,11 +35,40 @@ pip install -r requirements.txt
 python bot.py
 ```
 
+## Настройка автозапуска через systemd (Linux)
+
+1. Скопируйте файл systemd сервиса:
+```
+sudo cp sugrefftea-bot.service /etc/systemd/system/
+```
+
+2. Перезагрузите конфигурацию systemd:
+```
+sudo systemctl daemon-reload
+```
+
+3. Включите автозапуск:
+```
+sudo systemctl enable sugrefftea-bot
+```
+
+4. Запустите сервис:
+```
+sudo systemctl start sugrefftea-bot
+```
+
+5. Проверьте статус:
+```
+sudo systemctl status sugrefftea-bot
+```
+
 ## Структура проекта
 
 - `bot.py` - основной файл с кодом бота
 - `bot.db` - SQLite база данных для хранения информации
 - `requirements.txt` - зависимости проекта
+- `start.sh`, `stop.sh` - скрипты для управления ботом
+- `sugrefftea-bot.service` - файл конфигурации systemd
 - `README.md` - документация
 
 ## Лицензия
